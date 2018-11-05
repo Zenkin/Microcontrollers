@@ -3,7 +3,7 @@ jmp init
 org 30h
 
 init:
-	MOV TMOD, #11h  ; TMOD 0001 0001 16-bit timer set
+	MOV TMOD, #11h  ; Устанавливаем 16 битовый таймер
 	MOV TH0, #0FFh  ; Задаем старший бит таймера
 	MOV TL0, #0F0h  ; Задаем младший бит таймера
 	SETB TR0        ; Запускаем таймер
